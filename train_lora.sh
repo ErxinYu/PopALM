@@ -1,0 +1,21 @@
+CUDA_VISIBLE_DEVICES=0 python chatGLM_lora.py \
+    --do_train \
+    --train_file /home/xxx/data/ppo_weibo/weiboGen/train.json \
+    --prompt_column weibo \
+    --response_column resp \
+    --overwrite_cache \
+    --model_name_or_path /home/xxx/.cache/huggingface/hub/models--THUDM--chatglm-6b/snapshots/1d240ba371910e9282298d4592532d7f0f3e9f3e \
+    --output_dir /home/xxx/output/loraGen/ \
+    --overwrite_output_dir \
+    --max_source_length 128 \
+    --max_target_length 32 \
+    --per_device_train_batch_size 32 \
+    --per_device_eval_batch_size 8 \
+    --gradient_accumulation_steps 1 \
+    --predict_with_generate \
+    --max_steps 3000 \
+    --logging_steps 1 \
+    --save_steps 1000 \
+    --learning_rate 5e-5 \
+    --warmup_steps 1000 \
+    --fp16 True
