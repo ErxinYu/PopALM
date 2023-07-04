@@ -7,11 +7,7 @@ The code for "PopALM: Popularity-Aligned Language Models for Social Media Trendy
 ## Requirements
 
 ``` 
-conda create -n dis python=3.7 
-conda activate dis
-conda install pytorch torchvision torchaudio pytorch-cuda=11.6 -c pytorch -c nvidia
-pip install -e .
-pip install gensim jieba matplotlib overrides pyhocon allennlp accelerate tensorboard pandas datasets
+conda env create -f PopALM.yaml
 ```
 
 ## Description
