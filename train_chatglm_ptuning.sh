@@ -1,4 +1,4 @@
-CUDA_VISIBLE_DEVICES=0 python chatGLM_ptuning.py \
+CUDA_VISIBLE_DEVICES=0 python chatglm_ptuning.py \
     --do_train \
     --train_file /home/your_dir/datasets/weiboGen/train.json \
     --prompt_column weibo \
