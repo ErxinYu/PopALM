@@ -21,7 +21,7 @@ conda env create -f PopALM.yaml
 ### Step 1: Supervised Fine-tuning
 
 ``` 
-bash train_llama_ptuning.sh
+bash train_chatglm_ptuning.sh
 ```
 
 ### Step 2: Reward Model Training
