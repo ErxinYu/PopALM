@@ -17,14 +17,27 @@ Social media platforms are daily exhibiting millions of events. To better track 
 conda env create -f PopALM.yaml
 ```
 
-## Datasets
+## Training PopALM
+### Step 1: Supervised Fine-tuning
 
 ``` 
-conda env create -f PopALM.yaml
+bash train_llama_ptuning.sh
 ```
 
-## Step 1
+### Step 2: Reward Model Training
 
 ``` 
-conda env create -f PopALM.yaml
+bash train_reward.sh
+```
+
+### Step 3: CL-PPO Training
+
+``` 
+train_chatglm_clppo_ptuning.sh
+```
+
+## Testing PoPALM
+
+``` 
+test_chatglm_ptuning.sh
 ```
