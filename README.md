@@ -33,11 +33,11 @@ bash train_reward.sh
 ### Step 3: CL-PPO Training
 
 ``` 
-train_chatglm_clppo_ptuning.sh
+bash train_chatglm_clppo_ptuning.sh
 ```
 
 ## Testing PoPALM
 
 ``` 
-test_chatglm_ptuning.sh
+bash test_chatglm_ptuning.sh
 ```

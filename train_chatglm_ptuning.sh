@@ -1,11 +1,11 @@
 CUDA_VISIBLE_DEVICES=0 python chatGLM_ptuning.py \
     --do_train \
-    --train_file /home/yex/data/ppo_weibo/weiboGen/train.json \
+    --train_file /home/your_dir/datasets/weiboGen/train.json \
     --prompt_column weibo \
     --response_column resp \
     --overwrite_cache \
     --model_name_or_path THUDM/chatglm-6b \
-    --output_dir /home/yex/output/chatglm_ptuning/ \
+    --output_dir /home/your_dir/output/chatglm_ptuning/ \
     --overwrite_output_dir \
     --max_source_length 128 \
     --max_target_length 32 \
